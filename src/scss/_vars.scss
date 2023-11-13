@@ -1,0 +1,20 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Mulish";
+  --second-family: "Russo One";
+  --content-width: 1300px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --dark-color: #202932;
+  --black-700: #38434F;
+  --black-500: #78838E;
+  --black-100: #EAEDEF;
+  --accent-color: #1B70CA;
+  --blue-dark: #004999;
+  --blue-light: #8FC0F3;
+}

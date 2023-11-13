@@ -1,0 +1,157 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding-top: 16px;
+  top: 18px;
+  left: 0;
+  width: var(--content-width);
+  z-index: 10;
+  transition: 0.2s ease-in-out;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .nav__link--active::before {transform: rotate(90deg);}
+
+.menu-content {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  padding: 32px 48px;
+  border-radius: 0px 0px 8px 8px;
+  background-color: var(--light-color);
+  box-shadow: -7px 8px 0px 0px rgba(0, 73, 153, 1);
+  z-index: 20;
+
+  &__wrapper {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+  }
+
+  &__block {
+    padding-left: 24px;
+
+    a {
+      color: #000;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__item {
+    margin-bottom: 12px;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    a {
+      font-size: 14px;
+      font-weight: 400;
+      color: #000;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: var(--dark-color);
+        border-bottom: 1px solid var(--dark-color);
+      }
+    }
+  }
+
+  &__icon {
+   max-width: 90px;
+  }
+}
+
+
+// services
+
+.dropdown:hover .dropdown-second {display: block;}
+.dropdown:hover .nav__link--active::before {transform: rotate(90deg);}
+
+
+.dropdown-second {
+  display: none;
+  position: absolute;
+  padding-top: 16px;
+  top: 18px;
+  left: 0;
+  width: 245px;
+  z-index: 10;
+  transition: 0.2s ease-in-out;
+}
+
+.menu-second {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  padding: 32px 48px;
+  border-radius: 0px 0px 8px 8px;
+  background-color: var(--light-color);
+  box-shadow: -7px 8px 0px 0px rgba(0, 73, 153, 1);
+  z-index: 20;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    a {
+      font-size: 14px;
+      font-weight: 400;
+      color: #000;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        border-bottom: 1px solid var(--dark-color);
+      }
+    }
+  }
+
+  &__icon {
+   max-width: 90px;
+  }
+}
+
+// burger-mobile
+
+.dropdown:hover .dropdown-second {display: block;}
+.dropdown:hover .nav__link--active::before {transform: rotate(90deg);}

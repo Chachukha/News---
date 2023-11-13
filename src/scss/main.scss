@@ -1,0 +1,20 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+
+// page-one
+@import "./components/hero";
+
+// footer
+@import "./components/footer";
+// малые компоненты
+@import "./components/btn";
+@import "./components/breadcrumbs";
+@import "./components/dropdown";
+@import "./components/modal";
+@import "./components/burger-menu";
