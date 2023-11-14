@@ -262,6 +262,91 @@ a {
   color: var(--accent-color);
 }
 
+.registration__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 120px;
+}
+@media (max-width: 768px) {
+  .registration__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
+.registration__title {
+  margin-bottom: 40px;
+}
+.registration__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 16px;
+  width: 240px;
+}
+@media (max-width: 768px) {
+  .registration__form {
+    width: 320px;
+  }
+}
+.registration__form--inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.registration__form--text {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--black-900);
+}
+.registration__form--article {
+  opacity: 0.5;
+}
+.registration__form--article span a {
+  color: var(--black-900);
+  text-decoration: underline;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.registration__form--article span a:hover {
+  color: var(--accent-color);
+}
+.registration__image {
+  width: 750px;
+  height: 502px;
+}
+@media (max-width: 1024px) {
+  .registration__image {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .registration__image {
+    width: 320px;
+    height: 214px;
+  }
+}
+.registration__image--icon {
+  width: 100%;
+  height: 100%;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,6 +371,11 @@ a {
   -webkit-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+}
+@media (max-width: 768px) {
+  .btn--fill {
+    width: 320px;
+  }
 }
 .btn--fill:hover {
   color: var(--grey-900);
@@ -1771,5 +1861,12 @@ a {
   margin-bottom: 8px;
   width: 240px;
   height: 43px;
+}
+.all-form__input--registr {
+  width: 100%;
+  height: 43px;
+}
+.all-form__input--registr:not(:last-child) {
+  margin-bottom: 8px;
 }
 /*# sourceMappingURL=main.css.map */
