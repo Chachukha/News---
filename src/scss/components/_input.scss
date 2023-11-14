@@ -11,11 +11,15 @@
       opacity: 1;
     }
 
-    &:active {
+    &:hover {
       border: 1px solid var(--black-300);
       opacity: 1;
     }
+
+    &--drop {
+      margin-bottom: 8px;
+      width: 240px;
+      height: 43px;
+    }
   }
-
-
 }
