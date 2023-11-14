@@ -83,6 +83,18 @@
   }
 }
 
+.news-content {
+  padding: 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+
+  @include small-tablet {
+    gap: 8px;
+    padding: 0px;
+  }
+}
+
 .news-one {
   border-radius: 8px;
 
@@ -93,24 +105,10 @@
     height: 540px;
     width: 640px;
 
-    &:hover {
-      .news-one__info--title {
-        text-decoration: underline;
-      }
-    }
-
     @include small-tablet {
       width: 320px;
       height: 368px;
       gap: 8px;
-    }
-  }
-
-  &__position {
-    padding: 0px 16px;
-
-    @include small-tablet {
-      padding: 0px;
     }
   }
 
@@ -153,7 +151,6 @@
     }
   }
 }
-
 
 .news-second {
   border-radius: 8px;
