@@ -65,7 +65,7 @@
         <div class="menu-content">
           <form class="menu-content__form">
             <input class="all-form__input" type="text" placeholder="Email / Телефон">
-            <input class="all-form__input" type="password">
+            <input class="all-form__input" type="password" maxlength="16" placeholder="Пароль">
             <button class="btn btn-reset btn--stroke">Войти</button>
             <span>или</span>
             <a href="/" class="btn btn--fill">
@@ -79,177 +79,182 @@
 </header>
 
     <main class="main">
-      <section class="block">
+      <section class="news">
   <div class="container">
-    <div class="block__container">
-      <div class="block-one">
-        <div class="block-one__image">
-          <img src="../img/news-1.jpg" alt="" class="block-one__image--icon">
-        </div>
-        <div class="block-one__time block-one__position">
-          <span class="block-one__time--title">
-            Авиа
-          </span>
-          <span class="block-one__time--publish">
-            11 часов назад
-          </span>
-        </div>
-        <div class="block-one__info block-one__position">
-          <a href="/" class="block-one__info--link">
-            <h3 class="block-one__info--title">
-              Перевозка лесоматериалов автомобильным транспортом через территорию России
-            </h3>
-          </a>
-          <p class="block-one__info--text">
-            Каждый из нас сталкивался с тем, что нужно откуда-то доставить огромный груз.
-            И порой такой процесс является непростой задачей. Ведь…
-          </p>
-        </div>
-        <span class="block-one__company--text block-one__position">
-          ОАО «Галопередол»
-        </span>
-      </div>
-      <div class="block-second">
-        <div class="block-second__image">
-          <img src="../img/news-2.jpg" alt="" class="block-second__image--icon">
-        </div>
-        <div class="block-second__content">
-          <div class="block-second__time">
-            <span class="block-second__time--title">
-              ЖД
+    <div class="news__container">
+      <div class="news-one">
+        <a href="/" class="news-one__link">
+          <div class="news-one__image">
+            <img src="../img/news-1.jpg" alt="" class="news-one__image--icon">
+          </div>
+          <div class="news-one__time news-one__position">
+            <span class="news-one__time--title">
+              Авиа
             </span>
-            <span class="block-second__time--publish">
+            <span class="news-one__time--publish">
               11 часов назад
             </span>
           </div>
-          <div class="block-second__info">
-            <a href="/" class="block-second__info--link">
-              <h3 class="block-second__info--title">
-                Крупногабаритные автомобильные перевозки из Китая
+          <div class="news-one__info news-one__position">
+              <h3 class="news-one__info--title">
+                Перевозка лесоматериалов автомобильным транспортом через территорию России
               </h3>
-            </a>
-            <p class="block-second__info--text">
-              Каждый из нас сталкивался с тем, что нужно откуда-то доставить огромный груз…
+            <p class="news-one__info--text">
+              Каждый из нас сталкивался с тем, что нужно откуда-то доставить огромный груз.
+              И порой такой процесс является непростой задачей. Ведь…
             </p>
           </div>
-          <div class="block-second__company">
-            <span class="block-second__company--text">
-              ОАО «Галопередол»
-            </span>
-          </div>
-        </div>
+          <span class="news-one__company--text news-one__position">
+            ОАО «Галопередол»
+          </span>
+        </a>
       </div>
-      <div class="block-third">
-        <div class="block-third__bg"></div>
-        <div class="block-third__content">
-          <a href="/" class="block-third__link">
-            <h3 class="block-third__title">
+      <div class="news-second">
+        <a href="/" class="news-second__link">
+          <div class="news-second__image">
+            <img src="../img/news-2.jpg" alt="" class="news-second__image--icon">
+          </div>
+          <div class="news-second__content">
+            <div class="news-second__time">
+              <span class="news-second__time--title">
+                ЖД
+              </span>
+              <span class="news-second__time--publish">
+                11 часов назад
+              </span>
+            </div>
+            <div class="news-second__info">
+              <h3 class="news-second__info--title">
+                Крупногабаритные автомобильные перевозки из Китая
+              </h3>
+              <p class="news-second__info--text">
+                Каждый из нас сталкивался с тем, что нужно откуда-то доставить огромный груз…
+              </p>
+            </div>
+            <div class="news-second__company">
+              <span class="news-second__company--text">
+                ОАО «Галопередол»
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="news-third">
+        <a href="/" class="news-third__link">
+          <div class="news-third__bg"></div>
+          <div class="news-third__image">
+            <img src="../img/news-3.png" alt="" class="news-third__image--icon">
+          </div>
+          <div class="news-third__content">
+            <h3 class="news-third__title">
               Крупногабаритные автомобильные перевозки из Китая
             </h3>
-          </a>
-          <div class="block-third__bottom">
-            <span class="block-third__company">
-              ОАО «Галопередол»
-            </span>
-            <span class="block-third__time">
-              11 часов назад
-            </span>
+            <div class="news-third__bottom">
+              <span class="news-third__company">
+                ОАО «Галопередол»
+              </span>
+              <span class="news-third__time">
+                11 часов назад
+              </span>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
-      <div class="block-four">
-        <a href="/" class="block-four__link">
-            <h3 class="block-four__title">
+      <div class="news-four">
+        <a href="/" class="news-four__link">
+            <h3 class="news-four__title">
               Перевозка лесоматериалов автомобильным транспортом через территорию России
             </h3>
-          <div class="block-four__bottom">
-            <span class="block-one__company--text">
+          <div class="news-four__bottom">
+            <span class="news-one__company--text">
               ОАО «Галопередол»
             </span>
-            <span class="block-one__time--publish">
+            <span class="news-one__time--publish">
               11 часов назад
             </span>
           </div>
         </a>
       </div>
-      <div class="block-five">
-        <a href="/" class="block-four__link">
-          <h3 class="block-four__title">
+      <div class="news-five">
+        <a href="/" class="news-four__link">
+          <h3 class="news-four__title">
             Перевозка лесоматериалов автомобильным транспортом через территорию России
           </h3>
-          <div class="block-four__bottom">
-            <span class="block-one__company--text">
+          <div class="news-four__bottom">
+            <span class="news-one__company--text">
               ОАО «Галопередол»
             </span>
-            <span class="block-one__time--publish">
+            <span class="news-one__time--publish">
               11 часов назад
             </span>
           </div>
         </a>
       </div>
-      <div class="block-six">
-        <div class="block-six__image">
-          <img src="../img/news-4.png" alt="" class="block-one__image--icon">
-        </div>
-        <div class="block-one__time block-one__position">
-          <span class="block-one__time--publish">
-            11 часов назад
+      <div class="news-six">
+        <a class="news-six__link" href="/">
+          <div class="news-six__image">
+            <img src="../img/news-4.png" alt="" class="news-one__image--icon">
+          </div>
+          <div class="news-one__time news-one__position">
+            <span class="news-one__time--publish">
+              11 часов назад
+            </span>
+          </div>
+          <div class="news-one__info news-one__position">
+            <h3 class="news-one__info--title news-six__title">
+              Перевозка лесоматериалов автомобильным транспортом через территорию России
+            </h3>
+            <p class="news-one__info--text">
+              Каждый из нас сталкивался с тем, что нужно откуда-то доставить огромный груз.
+              И порой такой процесс является непростой задачей. Ведь…
+            </p>
+          </div>
+          <span class="news-one__company--text news-one__position">
+            ОАО «Галопередол»
           </span>
-        </div>
-        <div class="block-one__info block-one__position">
-          <a href="/" class="block-one__info--link">
-            <h3 class="block-one__info--title">
-              Перевозка лесоматериалов автомобильным транспортом через территорию России
-            </h3>
-          </a>
-          <p class="block-one__info--text">
-            Каждый из нас сталкивался с тем, что нужно откуда-то доставить огромный груз.
-            И порой такой процесс является непростой задачей. Ведь…
-          </p>
-        </div>
-        <span class="block-one__company--text block-one__position">
-          ОАО «Галопередол»
-        </span>
+        </a>
       </div>
-      <div class="block-seven">
-        <div class="block-seven__image">
-          <img src="../img/news-5.png" alt="" class="block-seven__image--icon">
-        </div>
-        <div class="block-seven__content">
-          <a href="/" class="block-four__link">
-            <h3 class="block-four__title">
+      <div class="news-seven">
+        <a href="/" class="news-seven__link">
+          <div class="news-seven__image">
+            <img src="../img/news-5.png" alt="" class="news-seven__image--icon">
+            <div class="news-seven__image--bg"></div>
+          </div>
+          <div class="news-seven__content">
+            <h3 class="news-four__title news-seven__title">
               Перевозка лесоматериалов автомобильным транспортом через территорию России
             </h3>
-          </a>
-          <div class="block-four__bottom">
-            <span class="block-one__company--text">
-              ОАО «Галопередол»
-            </span>
-            <span class="block-one__time--publish">
-              11 часов назад
-            </span>
+            <div class="news-four__bottom">
+              <span class="news-one__company--text">
+                ОАО «Галопередол»
+              </span>
+              <span class="news-one__time--publish">
+                11 часов назад
+              </span>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
-      <div class="block-eight">
-        <div class="block-eight__image">
-          <img src="../img/news-5.png" alt="" class="block-eight__image--icon">
-        </div>
-        <div class="block-seven__content">
-          <a href="/" class="block-four__link">
-            <h3 class="block-four__title">
+      <div class="news-eight">
+        <a href="/" class="news-eight__link">
+          <div class="news-eight__image">
+            <img src="../img/news-5.png" alt="" class="news-eight__image--icon">
+            <div class="news-seven__image--bg"></div>
+          </div>
+          <div class="news-seven__content">
+            <h3 class="news-four__title news-seven__title">
               Перевозка лесоматериалов автомобильным транспортом через территорию России
             </h3>
-          </a>
-          <div class="block-four__bottom">
-            <span class="block-one__company--text">
-              ОАО «Галопередол»
-            </span>
-            <span class="block-one__time--publish">
-              11 часов назад
-            </span>
+            <div class="news-four__bottom">
+              <span class="news-one__company--text">
+                ОАО «Галопередол»
+              </span>
+              <span class="news-one__time--publish">
+                11 часов назад
+              </span>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>

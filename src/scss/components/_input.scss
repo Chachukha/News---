@@ -5,19 +5,15 @@
     border-radius: 2px;
     border: 1px solid var(--Black300, #8E8B82);
     opacity: 0.3;
-    outline: 2px solid transparent;
 
     &:focus {
-      border: 2px solid var(--black-900);
+      border: 1px solid var(--black-900);
       opacity: 1;
     }
 
     &:active {
       border: 1px solid var(--black-300);
-    }
-
-    &:valid {
-      border: 1px solid var(--black-300);
+      opacity: 1;
     }
   }
 
