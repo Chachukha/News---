@@ -5,16 +5,18 @@
 @import "settings";
 
 // подключения компонентов страницы
-@import "./components/header";
+@import "./layout/header";
 
 // page-one
-@import "./components/hero";
+@import "./pages/hero";
 
 // footer
-@import "./components/footer";
+@import "./layout/footer";
 // малые компоненты
 @import "./components/btn";
 @import "./components/breadcrumbs";
 @import "./components/dropdown";
 @import "./components/modal";
 @import "./components/burger-menu";
+@import "./components/block";
+@import "./components/input";

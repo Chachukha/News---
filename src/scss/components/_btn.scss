@@ -1,31 +1,35 @@
 .btn {
-  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
   text-align: center;
   cursor: pointer;
 
-  &--text {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--blue-dark);
+  // &--text {
+  //   font-size: 16px;
+  //   font-weight: 700;
+  //   color: var(--blue-dark);
+  //   transition: 0.2s ease-in-out;
+
+  //   &:hover {
+  //     text-decoration: underline;
+  //   }
+  // }
+
+
+  &--fill {
+    width: 240px;
+    height: 46px;
+    color: var(--blue-900);
+    background-color: var(--light-700);
     transition: 0.2s ease-in-out;
 
     &:hover {
-      text-decoration: underline;
-    }
-  }
-
-
-  &--blue {
-    display: inline-block;
-    color: var(--light-color);
-    background-color: var(--accent-color);
-    transition: 0.2s ease-in-out;
-
-    &:hover {
-      background-color: var(--blue-dark);
+      color: var(--grey-900);
+      background-color: var(--accent-color);
     }
   }
 

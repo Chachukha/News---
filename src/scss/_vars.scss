@@ -2,19 +2,23 @@
 // colors
 :root {
   // base
-  --font-family: "Mulish";
-  --second-family: "Russo One";
+  --font-family: "Nunito Sans";
+  // --second-family: "Russo One";
   --content-width: 1300px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
   --light-color: #fff;
-  --dark-color: #202932;
-  --black-700: #38434F;
-  --black-500: #78838E;
-  --black-100: #EAEDEF;
-  --accent-color: #1B70CA;
-  --blue-dark: #004999;
-  --blue-light: #8FC0F3;
+  --light-700: #53D9F6;
+  --black-900: #343434;
+  --black-300: #8E8B82;
+  --grey-900: #F5F5F5;
+  --brown-900: #4F4A45;
+  --brown-700: #6C5F5B;
+  --blue-900: #383E56;
+  --blue-700: #363062;
+  --blue-500: #4D4C7D;
+  --accent-color: #117E96;
+  --beige-900: #F6F1EE;
 }
