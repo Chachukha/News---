@@ -7,6 +7,82 @@
   }
 }
 
+.news-category {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--light-700);
+
+  @include small-tablet {
+    font-size: 13px;
+  }
+}
+
+.news-date {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--brown-700);
+
+  @include small-tablet {
+    font-size: 12px;
+  }
+}
+
+.news-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.news-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--black-300);
+
+  @include small-tablet {
+    font-size: 13px;
+  }
+}
+
+.news-company {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-color);
+
+  @include small-tablet {
+    font-size: 13px;
+  }
+}
+
+.news-title {
+  &__big {
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--black-900);
+
+    @include small-tablet {
+      font-size: 16px;
+    }
+  }
+
+  &__min {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--black-900);
+  }
+}
+
+.news-link {
+  &:hover {
+    .news-title__big {
+      text-decoration: underline;
+    }
+    .news-title__min {
+      text-decoration: underline;
+    }
+  }
+}
+
 .news-one {
   border-radius: 8px;
 
@@ -58,16 +134,6 @@
     display: flex;
     align-items: center;
     gap: 16px;
-
-    &--publish {
-      font-size: 13px;
-      font-weight: 400;
-      color: var(--brown-700);
-
-      @include small-tablet {
-        font-size: 12px;
-      }
-    }
   }
 
   &__info {
@@ -85,31 +151,9 @@
         font-size: 16px;
       }
     }
-
-    &--text {
-      font-size: 14px;
-      font-weight: 400;
-      color: var(--black-300);
-
-      @include small-tablet {
-        font-size: 13px;
-      }
-    }
-  }
-
-  &__company {
-
-    &--text {
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--accent-color);
-
-      @include small-tablet {
-        font-size: 13px;
-      }
-    }
   }
 }
+
 
 .news-second {
   border-radius: 8px;
@@ -164,16 +208,6 @@
     display: flex;
     align-items: center;
     gap: 16px;
-
-    &--title {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--light-700);
-
-      @include small-tablet {
-        font-size: 13px;
-      }
-    }
   }
 
   &__info {
@@ -211,8 +245,6 @@
 
     &--text {
       font-size: 14px;
-      font-weight: 700;
-      color: var(--accent-color);
 
       @include small-tablet {
         font-size: 12px;
@@ -286,8 +318,6 @@
   }
 
   &__title {
-    font-size: 21px;
-    font-weight: 700;
     color: var(--light-color);
     transition: 0.2s ease-in-out;
 
@@ -297,33 +327,17 @@
   }
 
   &__bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
     @include small-tablet {
       padding: 0px 16px;
     }
   }
 
   &__company {
-    font-size: 14px;
-    font-weight: 700;
     color: var(--light-700);
-
-    @include small-tablet {
-      font-size: 13px;
-    }
   }
 
   &__time {
-    font-size: 13px;
-    font-weight: 400;
     color: var(--grey-900);
-
-    @include small-tablet {
-      font-size: 12px;
-    }
   }
 }
 
@@ -350,28 +364,6 @@
     @include small-tablet {
       padding: 16px 16px;
     }
-
-    &:hover {
-      .news-four__title {
-        text-decoration: underline;
-      }
-    }
-  }
-
-  &__title {
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--black-900);
-
-    @include small-tablet {
-      font-size: 15px;
-    }
-  }
-
-  &__bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 }
 
@@ -402,12 +394,6 @@
       width: 320px;
       height: 368px;
       gap: 8px;
-    }
-
-    &:hover {
-      .news-one__info--title {
-        text-decoration: underline;
-      }
     }
   }
 
@@ -451,9 +437,6 @@
     }
 
     &:hover {
-      .news-four__title {
-        text-decoration: underline
-      }
       .news-seven__image--bg {
         opacity: 0.2;
         background-color: var(--light-700);
@@ -509,9 +492,6 @@
     }
 
     &:hover {
-      .news-four__title {
-        text-decoration: underline;
-      }
       .news-seven__image--bg {
         opacity: 0.2;
         background-color: var(--light-700);
@@ -523,7 +503,6 @@
     position: relative;
     min-width: 146px;
     height: 87px;
-
 
     @include small-tablet {
       width: 320px;
