@@ -17,6 +17,27 @@
   }
 }
 
+.news-status {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--black-300);
+
+  &__publish {
+    color: var(--accent-color);
+  }
+
+  &__denied {
+    display: flex;
+    gap: 4px;
+    color: #F14747;
+
+    &::after {
+      content: url('../../img/svg/denied.svg');
+    }
+  }
+}
+
 .news-date {
   font-size: 13px;
   font-weight: 400;
