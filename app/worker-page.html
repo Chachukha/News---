@@ -81,32 +81,143 @@
 </header>
 
     <main class="main">
-      <section class="registration top-offset bottom-offset">
+      <section class="worker top-offset bottom-offset">
   <div class="container">
-    <h2 class="registration__title title">
-      Регистрация нового аккаунта
+    <h2 class="title profile__title">
+      Личный кабинет
     </h2>
-    <div class="registration__wrapper">
-      <form class="registration__form">
-        <div class="registration__form--inputs">
-          <input class="all-form__input all-form__input--registr" type="email" placeholder="Email">
-          <input class="all-form__input all-form__input--registr" type="tel" placeholder="Телефон">
-          <input class="all-form__input all-form__input--registr" type="text" placeholder="УНП">
-          <input class="all-form__input all-form__input--registr" type="text" placeholder="Наименование организации">
-        </div>
-        <p class="registration__form--text">
-          Пароль для авторизации будет выслан
-          на Ваш почтовый адрес. Его можно будет изменить в настройках личного кабинета.
-        </p>
-        <button class="btn btn-reset btn--fill">Зарегестрироваться</button>
-        <p class="registration__form--text registration__form--article">
-          Нажимая кнопку «Зарегистрироваться», Вы подтверждаете согласие с <span><a href="/">Политикой конфиденциальной информации</a></span>
-        </p>
-      </form>
-      <div class="registration__image">
-        <img src="../img/registration/reg.png" alt="" class="registration__image--icon">
+    <div class="profile-nav">
+      <a href="/" class="profile-nav__link">
+        Профиль
+        <svg class="profile-nav__icon--active" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+          <path d="M8.6 23L6.7 19.8L3.1 19L3.45 15.3L1 12.5L3.45 9.7L3.1 6L6.7 5.2L8.6 2L12 3.45L15.4 2L17.3 5.2L20.9 6L20.55 9.7L23 12.5L20.55 15.3L20.9 19L17.3 19.8L15.4 23L12 21.55L8.6 23ZM10.95 16.05L16.6 10.4L15.2 8.95L10.95 13.2L8.8 11.1L7.4 12.5L10.95 16.05Z" fill="#117E96"/>
+        </svg>
+      </a>
+      <a href="/" class="profile-nav__link profile-nav__link--active">
+        Сотрудники
+      </a>
+      <a href="/" class="profile-nav__link">
+        Мои статьи
+      </a>
+      <a href="/" class="profile-nav__link">
+        Смена пароля
+      </a>
+    </div>
+   <div class="swiper-container">
+    <div class="swiper swiper-one">
+      <div class="swiper-wrapper swiper-one__wrapper">
+         <div class="swiper-slide swiper-one__slide">
+           <a href="/" class="profile-nav__link profile-nav__link--active">
+             Профиль
+             <svg class="profile-nav__icon--active" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25">
+               <path d="M8.6 23L6.7 19.8L3.1 19L3.45 15.3L1 12.5L3.45 9.7L3.1 6L6.7 5.2L8.6 2L12 3.45L15.4 2L17.3 5.2L20.9 6L20.55 9.7L23 12.5L20.55 15.3L20.9 19L17.3 19.8L15.4 23L12 21.55L8.6 23ZM9.45 20.45L12 19.35L14.6 20.45L16 18.05L18.75 17.4L18.5 14.6L20.35 12.5L18.5 10.35L18.75 7.55L16 6.95L14.55 4.55L12 5.65L9.4 4.55L8 6.95L5.25 7.55L5.5 10.35L3.65 12.5L5.5 14.6L5.25 17.45L8 18.05L9.45 20.45ZM10.95 16.05L16.6 10.4L15.2 8.95L10.95 13.2L8.8 11.1L7.4 12.5L10.95 16.05Z"/>
+             </svg>
+           </a>
+         </div>
+         <div class="swiper-slide swiper-one__slide">
+           <a href="/" class="profile-nav__link">
+             Сотрудники
+           </a>
+         </div>
+         <div class="swiper-slide swiper-one__slide">
+           <a href="/" class="profile-nav__link">
+             Мои статьи
+           </a>
+         </div>
+         <div class="swiper-slide swiper-one__slide">
+           <a href="/" class="profile-nav__link">
+             Смена пароля
+           </a>
+         </div>
       </div>
     </div>
+   </div>
+   <div class="worker__wrapper">
+    <div class="worker__block">
+      <div class="worker__info">
+        <h4 class="worker__info--name">
+          Иван Иванович Нагибаевский
+        </h4>
+        <p class="worker__info--email">
+          gs1234tytytytytyty@gmail.com
+        </p>
+        <div class="worker__info--btns">
+          <button class="btn-reset worker__btn worker__btn--edit">
+            <img src="../img/svg/edit.svg" alt="delete">
+          </button>
+          <button class="btn-reset worker__btn worker__btn--delete">
+            <img src="../img/svg/delete.svg" alt="delete">
+          </button>
+        </div>
+      </div>
+      <div class="worker__info">
+        <h4 class="worker__info--name">
+          Иван Иванович Нагибаевский
+        </h4>
+        <p class="worker__info--email">
+          gs1234tytytytytyty@gmail.com
+        </p>
+        <div class="worker__info--btns">
+          <button class="btn-reset worker__btn worker__btn--edit">
+            <img src="../img/svg/edit.svg" alt="delete">
+          </button>
+          <button class="btn-reset worker__btn worker__btn--delete">
+            <img src="../img/svg/delete.svg" alt="delete">
+          </button>
+        </div>
+      </div>
+      <div class="worker__info">
+        <h4 class="worker__info--name">
+          Иван Иванович Нагибаевский
+        </h4>
+        <p class="worker__info--email">
+          gs1234tytytytytyty@gmail.com
+        </p>
+        <div class="worker__info--btns">
+          <button class="btn-reset worker__btn worker__btn--edit">
+            <img src="../img/svg/edit.svg" alt="delete">
+          </button>
+          <button class="btn-reset worker__btn worker__btn--delete">
+            <img src="../img/svg/delete.svg" alt="delete">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="worker__bottom">
+      <button href="/" class="btn-reset worker__link btn btn--fill open-modal-btn">
+        Пригласить сотрудника
+      </button>
+    </div>
+        <div class="modal" id="myModal">
+          <div class="modal__content call__container">
+            <button class="btn-reset modal__close" id="closeModalBtn"></button>
+            <div class="services-form__left">
+              <h4 class="services-form__subtitle">
+                СВЯЗАТЬСЯ С НАМИ
+              </h4>
+              <h2 class="services-form__title title border-bottom">
+                Обратная связь
+              </h2>
+              <p class="services-form__descr">
+                Закажите звонок и мы Вам перезвоним!
+              </p>
+              <form class="call-form">
+                <div class="call-form__top">
+                  <div class="call-form__item">
+                    <label class="contacts-form__label" for="name">Имя</label>
+                    <input type="text" class="contacts-form__input" id="name">
+                  </div>
+                  <div class="call-form__item">
+                    <label class="call-form__label" for="name">Телефон</label>
+                    <input class="call-form__input" type="text" id="name">
+                  </div>
+                </div>
+                <button class="btn btn-reset btn--blue call-form__btn" type="submit">Заказать звонок</button>
+              </form>
+            </div>
+          </div>
+        </div>
+   </div>
   </div>
 </section>
 

@@ -13,6 +13,12 @@
 // registration
 @import "./pages/registration";
 
+// profile
+@import "./pages/profile";
+
+// worker
+@import "./pages/worker";
+
 // footer
 @import "./layout/footer";
 // малые компоненты
@@ -23,3 +29,4 @@
 @import "./components/burger-menu";
 @import "./components/block";
 @import "./components/input";
+@import "./components/slider";

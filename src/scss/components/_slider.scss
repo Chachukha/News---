@@ -1,0 +1,25 @@
+.swiper-one {
+  display: none;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--beige-900);
+
+  &__wrapper {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__slide {
+    max-width: 140px;
+    height: 41px;
+  }
+}
+
+.swiper-container {
+  @include max-desktop {
+    display: none;
+  }
+
+  @include mobile {
+    display: block;
+  }
+}
