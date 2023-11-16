@@ -771,6 +771,33 @@ a {
   max-width: 320px;
 }
 
+.password__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 24px;
+}
+.password__form--inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 8px;
+  width: 240px;
+}
+@media (max-width: 576px) {
+  .password__form--inputs {
+    width: 320px;
+  }
+}
+
 .footer {
   background-color: var(--grey-900);
   padding: 40px 0px;
