@@ -1,0 +1,56 @@
+.question {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__descr {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black-300);
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__form {
+    display: flex;
+    gap: 12px;
+    width: 732px;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
+
+    &--textarea {
+      border-radius: 2px;
+      border: 1px solid var(--black-300);
+      opacity: 0.3;
+      padding: 12px;
+      height: 133px;
+      width: 480px;
+      resize: none;
+
+      @include small-tablet {
+        width: 320px;
+        height: 233px;
+      }
+    }
+
+    &--inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 240px;
+
+      @include small-tablet {
+        width: 320px;
+      }
+    }
+  }
+
+
+}
