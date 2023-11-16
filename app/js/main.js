@@ -194,6 +194,27 @@ $(document).ready(function() {
 
 /***/ }),
 
+/***/ "./src/js/_file.js":
+/*!*************************!*\
+  !*** ./src/js/_file.js ***!
+  \*************************/
+/***/ (() => {
+
+$('#imageInput').on('change', function() {
+	$input = $(this);
+	if($input.val().length > 0) {
+		fileReader = new FileReader();
+		fileReader.onload = function (data) {
+		$('.form-photo__preview').attr('src', data.target.result);
+		}
+		fileReader.readAsDataURL($input.prop('files')[0]);
+		$('.form-photo__preview').css('display', 'block');
+	}
+});
+
+
+/***/ }),
+
 /***/ "./src/js/_functions.js":
 /*!******************************!*\
   !*** ./src/js/_functions.js ***!
@@ -442,6 +463,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dropdown__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_dropdown__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _click__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./_click */ "./src/js/_click.js");
 /* harmony import */ var _click__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_click__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _file__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./_file */ "./src/js/_file.js");
+/* harmony import */ var _file__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_file__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 

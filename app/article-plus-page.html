@@ -81,30 +81,73 @@
 </header>
 
     <main class="main">
-      <section class="registration top-offset bottom-offset">
+      <section class="article-plus top-offset bottom-offset">
   <div class="container">
-    <h2 class="registration__title title">
-      Регистрация нового аккаунта
+    <h2 class="title profile__title">
+      Личный кабинет
     </h2>
-    <div class="registration__wrapper">
-      <form class="registration__form">
-        <div class="registration__form--inputs">
-          <input class="all-form__input all-form__input--registr" type="email" placeholder="Email">
-          <input class="all-form__input all-form__input--registr" type="tel" placeholder="Телефон">
-          <input class="all-form__input all-form__input--registr" type="text" placeholder="УНП">
-          <input class="all-form__input all-form__input--registr" type="text" placeholder="Наименование организации">
+    <div class="profile-nav">
+      <a href="/" class="profile-nav__link">
+        Профиль
+        <svg class="profile-nav__icon--default" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+          <path d="M8.6 23L6.7 19.8L3.1 19L3.45 15.3L1 12.5L3.45 9.7L3.1 6L6.7 5.2L8.6 2L12 3.45L15.4 2L17.3 5.2L20.9 6L20.55 9.7L23 12.5L20.55 15.3L20.9 19L17.3 19.8L15.4 23L12 21.55L8.6 23ZM10.95 16.05L16.6 10.4L15.2 8.95L10.95 13.2L8.8 11.1L7.4 12.5L10.95 16.05Z"/>
+        </svg>
+      </a>
+      <a href="/" class="profile-nav__link">
+        Сотрудники
+      </a>
+      <a href="/" class="profile-nav__link profile-nav__link--active">
+        Мои статьи
+      </a>
+      <a href="/" class="profile-nav__link">
+        Смена пароля
+      </a>
+    </div>
+    <div class="article-plus__wrapper">
+      <div class="breadcrumbs">
+        <a href="/" class="breadcrumbs__link">
+          <svg class="breadcrumbs__arrow" xmlns="http://www.w3.org/2000/svg" width="34" height="23" viewBox="0 0 34 23" fill="none">
+            <path d="M0.939339 10.4393C0.353554 11.0251 0.353554 11.9749 0.939339 12.5607L10.4853 22.1066C11.0711 22.6924 12.0208 22.6924 12.6066 22.1066C13.1924 21.5208 13.1924 20.5711 12.6066 19.9853L4.12132 11.5L12.6066 3.01472C13.1924 2.42893 13.1924 1.47919 12.6066 0.893398C12.0208 0.307611 11.0711 0.307611 10.4853 0.893398L0.939339 10.4393ZM34 10L2 10V13L34 13V10Z"/>
+          </svg>
+          <h3 class="breadcrumbs__title">
+            Новая статья
+          </h3>
+        </a>
+      </div>
+      <form class="form-photo">
+        <div class="form-photo__left">
+          <input class="all-form__input" type="text" maxlength="68" placeholder="Название стать|">
+          <span class="form-photo__symbol">Максимум: 68 символов.</span>
+          <div class="form-photo__right">
+            <img src="" class="form-photo__preview">
+           </div>
+          <div class="form-photo__data">
+            <label class="btn-reset form-photo__btn" for="imageInput">
+              <img src="../img/svg/download.svg" alt="" class="form-photo__btn--icon">
+              Загрузить основную фотографию
+            </label>
+            <input type="file" accept="image/*" id="imageInput" style="display: none;">
+            <input class="all-form__input form-photo__date" type="date" placeholder="Дата публикации">
+            <div class="custom-select">
+              <select>
+                <option class="custom-select__option">Раздел размещения статьи</option>
+                <option class="custom-select__option">Авто</option>
+                <option class="custom-select__option">Авиа</option>
+              </select>
+            </div>
+            <input class="all-form__input" type="text" maxlength="68" placeholder="Slug">
+            <input class="all-form__input" type="text" maxlength="68" placeholder="SEO-заголовок">
+            <textarea class="all-form__textarea" placeholder="Мета-описание"></textarea>
+          </div>
         </div>
-        <p class="registration__form--text">
-          Пароль для авторизации будет выслан
-          на Ваш почтовый адрес. Его можно будет изменить в настройках личного кабинета.
-        </p>
-        <button class="btn btn-reset btn--fill">Зарегестрироваться</button>
-        <p class="registration__form--text registration__form--article">
-          Нажимая кнопку «Зарегистрироваться», Вы подтверждаете согласие с <span><a href="/">Политикой конфиденциальной информации</a></span>
-        </p>
+
       </form>
-      <div class="registration__image">
-        <img src="../img/registration/reg.png" alt="" class="registration__image--icon">
+      <div class="artilce-plus__image">
+        <img src="../img/article-plus.png" alt="" class="article-plus__image--icon">
+      </div>
+      <div class="btn--position">
+        <button class="btn btn-reset btn--fill">Опубликовать статью</button>
+        <button class="btn btn-reset btn--stroke">Предпросмотр</button>
       </div>
     </div>
   </div>

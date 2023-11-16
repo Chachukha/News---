@@ -20,6 +20,19 @@
   //   }
   // }
 
+  &--position {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 24px;
+    border-top: 1px solid var(--beige-900);
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
 
   &--fill {
     width: 240px;
@@ -46,6 +59,10 @@
 
     &:hover {
       background-color: var(--light-700);
+    }
+
+    @include mobile {
+      width: 320px;
     }
   }
 

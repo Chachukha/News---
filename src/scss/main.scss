@@ -22,6 +22,12 @@
 // article
 @import "./pages/article";
 
+// article-plus
+@import "./pages/article-plus";
+
+// password
+@import "./pages/password";
+
 // footer
 @import "./layout/footer";
 // малые компоненты
@@ -33,3 +39,4 @@
 @import "./components/block";
 @import "./components/input";
 @import "./components/slider";
+@import "./components/select";
