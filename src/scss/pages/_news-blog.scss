@@ -1,3 +1,42 @@
 .news-blog {
-  
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__subtitle {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--accent-color);
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__image {
+    width: 860px;
+    height: 574px;
+
+    &--icon {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    h1,h2,h3,h4,h5,h6,strong,li {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
 }
