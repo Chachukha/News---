@@ -1,5 +1,16 @@
 .breadcrumbs {
 
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+
+    @include small-tablet {
+      margin-bottom: 16px;
+    }
+  }
+
   &__link {
     display: flex;
     align-items: center;
@@ -9,6 +20,30 @@
       .breadcrumbs__arrow {
         opacity: 1;
         fill: var(--black-900);
+      }
+    }
+
+    &--second {
+      font-size: 14px;
+      font-weight: 900;
+      color: var(--black-300);
+
+      &:nth-child(1) {
+        display: flex;
+        gap: 16px;
+      }
+
+      &:not(:last-child) {
+
+        &::after {
+          content: url('../../img/svg/ellipse.svg');
+          width: 4px;
+          height: 4px;
+        }
+      }
+
+      &:not([href]) {
+        opacity: 0.5;
       }
     }
   }

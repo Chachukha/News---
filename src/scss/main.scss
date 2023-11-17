@@ -34,6 +34,18 @@
 // /question
 @import "./pages/question";
 
+// /agreement
+@import "./pages/agreement";
+
+// /adv
+@import "./pages/adv";
+
+// /news-section
+@import "./pages/news-section";
+
+// news-blog
+@import "./pages/news-blog";
+
 // footer
 @import "./layout/footer";
 // малые компоненты
@@ -42,7 +54,7 @@
 @import "./components/dropdown";
 @import "./components/modal";
 @import "./components/burger-menu";
-@import "./components/block";
+@import "./components/block-news";
 @import "./components/input";
 @import "./components/slider";
 @import "./components/select";

@@ -9,16 +9,67 @@
   text-align: center;
   cursor: pointer;
 
-  // &--text {
-  //   font-size: 16px;
-  //   font-weight: 700;
-  //   color: var(--blue-dark);
-  //   transition: 0.2s ease-in-out;
+  &--all, &--all_second, &--all_third {
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid var(--brown-700);
+    border-radius: 2px;
+    color: var(--brown-900);
+    transition: 0.2s ease-in-out;
 
-  //   &:hover {
-  //     text-decoration: underline;
-  //   }
-  // }
+    &:hover {
+      background-color: var(--light-700);
+      border-color: var(--light-700);
+    }
+  }
+
+  &--all, &--all_second {
+
+    &::after {
+      content: url('../../img/svg/arrow-up-right.svg');
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &--all {
+    display: flex;
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &--all_second {
+    display: none;
+    margin-top: 16px;
+
+    @include small-tablet {
+      display: flex;
+    }
+
+    @include mobile {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &--all_third {
+    display: flex;
+    justify-content: center;
+
+    @include for-desktop {
+      margin-top: 16px;
+    }
+    &::after {
+      content: url('../../img/svg/arrow-down-right.svg');
+      width: 24px;
+      height: 24px;
+    }
+  }
 
   &--position {
     display: flex;
@@ -35,14 +86,9 @@
 
 
   &--fill {
-    width: 240px;
     color: var(--blue-900);
     background-color: var(--light-700);
     transition: 0.2s ease-in-out;
-
-    @include small-tablet {
-      width: 320px;
-    }
 
     &:hover {
       color: var(--grey-900);

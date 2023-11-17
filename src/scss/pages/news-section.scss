@@ -1,0 +1,38 @@
+.news-section {
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__wrapper {
+    margin-top: 40px;
+    display: flex;
+    gap: 32px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:last-child {
+      align-self: flex-end;
+      justify-self: flex-end;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__block {
+    display: flex;
+    gap: 32px;
+
+    @include for-desktop {
+      flex-direction: column;
+    }
+  }
+}

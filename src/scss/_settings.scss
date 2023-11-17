@@ -115,6 +115,16 @@ a {
   color: var(--black-900);
 }
 
+.descr {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--brown-900);
+
+  @include small-tablet {
+    font-size: 15px;
+  }
+}
+
 .top-offset {
   margin-top: 40px;
 
@@ -134,3 +144,5 @@ a {
 .block-offset {
   margin-bottom: 32px;
 }
+
+
